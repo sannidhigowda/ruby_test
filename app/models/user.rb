@@ -6,6 +6,8 @@
     validates  :lastname,:presence=>true            
      
      validates_length_of :password, :minimum => 8, :allow_blank => true
+
+     has_many :projects
  
     
     PASSWORD_FORMAT = /\A
